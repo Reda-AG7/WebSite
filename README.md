@@ -3,9 +3,13 @@
 the project's goal is to Create a website where the teacher can create python code questions and Exams.  
 Assign the exams to certain classes that he/she teaches.  
 The teacher can correct tests, or recorect them if the auto grading option is activated.  
-
 the Students can take the exams and check their grades.  
-
+  
+## languages:  
+  html  
+  javascript   
+  php  
+  Mysql  
 ## Usage  
 There are two accounts are already created for testing:  
 teacher : t111  
@@ -19,4 +23,16 @@ otherwise there is a sign up option where you can create your account as (teache
 Please make sure to use njit vpn [cisco anyconnect](https://ist.njit.edu/vpn).  
 
 ## the link:  
-https://afsaccess4.njit.edu/~ra69/Final/index.php  
+https://afsaccess4.njit.edu/~ra69/Final/index.php    
+
+### screenshots from the website:  
+![](images/signIn.png)  
+![](images/signIUp.png)  
+![](images/tests.png)  
+![](images/questions.png)  
+![](images/createQuestion.png)  
+![](images/createTest.png) 
+![](images/assignTo.png) 
+![](images/studentTests.png) 
+![](images/takeTest.png) 
+![](images/result.png) 
