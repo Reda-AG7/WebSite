@@ -1,0 +1,250 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+}
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+				0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.top{
+	margin: 50px 0 30px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.left{
+	display: flex;
+	flex-direction: row;
+}
+#new{
+	margin-left: 40px;
+}
+#new label, #old label{
+	margin-right: 10px;
+}
+table{
+	width: 100%;
+	height: auto;
+}
+tr{
+	margin: 10px 0;
+}
+.tr:hover{
+	background-color: #ededed;
+}
+th{
+	text-align: center;
+	font-size: 18px;
+	padding: 15px 10px;
+	border-left: 5px solid #fba92c;
+}
+td{
+	text-align: center;
+	vertical-align: top;
+	padding: 20px 10px;
+}
+
+td input[type="checkbox"]{
+	height: 20px;
+	width: 20px;
+	color: black;
+}
+
+.switch{
+	position: relative;
+	display: block;
+	width: 55px;
+	height: 30px;
+	margin: 0 auto;
+}
+.slider{
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #ccc;
+	transition: .4s;
+	border-radius: 15px;
+}
+.switch input{
+	visibility: hidden;
+}
+.slider::before{
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	background-color: #fff;
+	border-radius: 13px;
+	left: 3px;
+	bottom: 2px;
+	transition: .4s;
+}
+input:checked + .slider{
+	background-color: #fba92c;
+}
+input:checked + .slider::before{
+	transform: translateX(23px);
+}
+.parent{
+	position: absolute;
+	top: 0;
+	min-height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+form{
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	width: 500px;
+}
+.child{
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.child h2{
+	margin: 10px auto;
+}
+#close{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: white;
+	border: none;
+	height: 20px;
+	width: 20px;
+	font-size: 18px;
+	color: #9e9e9e;
+	cursor: pointer;
+}
+#close:hover{
+	color: #565656;
+}
+input[name='save']{
+	margin: 10px auto;
+	padding: 5px;
+	background-color: #fba92c;
+	color: black;
+	font-size: 17px;
+}
+input[name="date"]{
+	cursor: pointer;
+	margin: 10px 0;
+}
+
+.divAuto{
+	padding: 0 40px;
+	margin: 20px 0 10px;
+	display: flex;
+	flex-direction: row;
+}
+input[name="autoGrade"],input[name="class"]{
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.parent label{
+	font-size: 17px;
+	font-family: 'Poppins', sans-serif;
+}
+.divClasses{
+	padding: 0 40px;
+	display: flex;
+	flex-direction: column;
+}
+.divClass input[type="checkbox"]{
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.divClasses h3{
+	margin: 20px 0 10px;
+}
+#dueDate{
+	padding: 0 40px;
+	margin-top: 20px;
+}
+#tdTitle form{
+	text-align: left;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-color: inherit;
+	padding: none;
+}
+#tdTitle form{
+	background-color: inherit;
+}
+button[name="submit"]{
+	border: none;
+	background-color: inherit;
+	font-size: 16px;
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+button[name="submit"]:hover{
+	font-weight: bold;
+	background-color: inherit;
+}
+
+label[for="searchBy"]{
+	margin-left: 20px;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif; 
+}
+select[name="searchBy"]{
+	height: 40px;
+	width: 160px;
+	font-size: 18px;
+	cursor: pointer;
+	border: none;
+	background-color: #ededed;
+	border-left: 5px solid black; 
+	margin: 10px 0 0 5px;
+}
+
+.success{
+	position: absolute;
+	top: 80px;
+	height: 40px;
+	width: 1000px;
+	display: none;
+	text-align: center;
+	background-color: #90EE90;
+	color: #004F00;
+	font-size: 18px;
+	line-height: 40px;
+}
+.failure{
+	position: absolute;
+	top: 80px;
+	height: 40px;
+	width: 1000px;
+	display: none;
+	text-align: center;
+	background-color: #f8d7da;
+	color: #721c24;
+	font-size: 18px;
+	line-height: 40px;
+}

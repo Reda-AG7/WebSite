@@ -1,0 +1,238 @@
+body{
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	font-family: 'Poppins',sans-serif;
+}
+.container{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+				0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.mainQ{
+	margin: 30px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	padding: 30px 30px 50px;
+	box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+				0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.qAnsDiv{
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+}
+.t{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#answer{
+	padding: 10px;
+	margin: 10px auto;
+	background-color: #f9f9f9;
+	font-size: 17px;
+	font-weight: bold;
+	color: #000;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 90%;
+	float: left;
+	resize: vertical;
+	min-height: 200px; 
+}
+#titles{
+	margin-top: 15px;
+}
+
+#qLabels{
+	margin: 10px 0 0 50px;
+}
+table{
+	width: 90%;
+	height: auto;
+	border-collapse: collapse;
+	margin: 10px auto;
+}
+
+tr{
+	margin: 10px 0;
+}
+
+th{
+	text-align: center;
+	font-size: 18px;
+	padding: 5px;
+	background-color: #C5C5C5;
+	border: 1px solid #979797;
+}
+td{
+	vertical-align: top;
+	text-align: center;
+	padding: 10px 0;
+	border: 1px solid #979797;
+}
+#titlesCheck{
+	margin: 10px 0 20px 40px;
+	text-decoration: underline;
+	color: #565656;
+}
+.t h2{
+	border-left: 5px solid #fba92c;
+	padding-left: 10px;
+	margin: 20px 0 0 40px;
+}
+.t h3{
+	padding-right: 10px;
+	margin: 20px 40px 0 0;
+}
+
+h5{
+	margin: 20px 0 0 40px;
+}
+.topDiv{
+	display: flex;
+	flex-direction: column;
+}
+.divSec{
+	margin: 20px 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.studDiv{
+	display: flex;
+	flex-direction: row;
+}
+.resultDiv{
+	display: flex;
+	flex-direction: row;
+	background-color: #fba92c;
+}
+#result{
+	margin-left: 10px;
+}
+.topDiv h2{
+	border: none;
+	margin: 20px auto;
+}
+input[name="functionNamePts[]"]{
+	text-align: center;
+	height: 100%;
+	width: 90%;
+	margin: 5px auto;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	outline: none;
+}
+input[name="constraintsPoints[]"]{
+	text-align: center;
+	height: 100%;
+	width: 90%;
+	margin: 5px auto;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	outline: none;
+}
+input[name="casePoints[]"]{
+	text-align: center;
+	height: 100%;
+	width: 90%;
+	margin: 5px auto;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	outline: none;
+}
+input[name="questionResult"]{
+	text-align: center;
+	height: 100%;
+	width: 90%;
+	margin: 5px auto;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+}
+/*input[name="finalS"]{
+	text-align: center;
+	width: 90%;
+	margin: 5px auto;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+}*/
+
+textarea[name="comment[]"]{
+	text-align: left;
+	height: 80px;
+	padding: 0 10px;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	resize: none;
+	outline: none;
+}
+textarea[name="comment"]{
+	text-align: left;
+	height: 80px;
+	padding: 0 10px;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 16px;
+	border: none;
+	resize: none;
+	outline: none;
+}
+input[name="update"]{
+	padding: 7px;
+	background-color: #fba92c;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 150px;
+	margin: 20px 400px 50px;
+	align-content: center;
+}
+
+.bottomDiv{
+	margin: 10px auto;
+	padding: 10px;
+	width: 200px;
+	display: flex;
+	flex-direction: row;
+ }
+ .bottomDiv input{
+ 	width: 30px;
+ 	font-size: 18px;
+ 	margin-left: 10px;
+ 	font-weight: bold;
+ 	border: none;
+ }
+#updateQResult{
+	width: 100%;
+	height: 40px;
+	background-color: #fba92c;
+	cursor: pointer;
+}
+#rr{
+	justify-content: center;
+	width: 200px;
+	margin: 0 auto;
+}
