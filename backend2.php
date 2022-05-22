@@ -1,9 +1,9 @@
 <?php 
 
 $dbserverName = 'sql1.njit.edu';
-$dbUsername = 'ra69';
-$dbPassword = 'ron@LDO1992';
-$dbName = 'ra69';
+$dbUsername = '****';
+$dbPassword = '****';
+$dbName = '****';
 
 $conn = mysqli_connect($dbserverName,$dbUsername,$dbPassword,$dbName);
 
