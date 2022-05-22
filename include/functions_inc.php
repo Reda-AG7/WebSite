@@ -1,7 +1,7 @@
 <?php 
 
 function sendCurl($postdata){
-    $url = 'https://afsaccess4.njit.edu/~jz547/backend2.php';
+    $url = 'https://afsaccess4.njit.edu/~ra69/Final/index.php';
 
     $curl = curl_init();
     curl_setopt($curl,CURLOPT_URL, $url);
